@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aiman Mehmood | My Little World</title>
+
+    <style>
+        body {
+            background-color: #fff0f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            color: #5c3748;
+        }
+        
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#journey">My Journey</a>
+</nav>
+<button id="theme-toggle" onclick="toggleTheme()">
+    🌙 Dark Mode
+</button>
+
+
+
+       <header id="home"> {
+            background-color: #f4a6c1;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 38px;
+        }
+
+        header p {
+            color: white;
+            font-size: 18px;
+        }
+
+        section {
+            background-color: white;
+            margin: 25px auto;
+            padding: 25px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px #e8bfd0;
+        }
+
+        h2 {
+            color: #d65a87;
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
+            line-height: 2;
+        }
+
+        button {
+            background-color: #e879a5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c94f7c;
+        }
+
+        footer {
+            background-color: #f4a6c1;
+            padding: 18px;
+            color: white;
+            margin-top: 30px;
+        }
+        nav {
+    background-color: white;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #d65a87;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8e3155;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f4a6c1;
+    box-shadow: 0 4px 15px #e8bfd0;
+    margin: 15px auto;
+}
+.welcome-btn {
+    display: inline-block;
+    background-color: white;
+    color: #d65a87;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px #e8bfd0;
+    transition: 0.3s;
+}
+
+.welcome-btn:hover {
+    background-color: #d65a87;
+    color: white;
+    transform: scale(1.05);
+}
+
+.project-card {
+    background-color: #fff0f5;
+    border: 2px solid #f8c4d8;
+    border-radius: 18px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 450px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px #e8bfd0;
+}
+
+.project-card h3 {
+    color: #d65a87;
+}
+
+.project-tag {
+    display: inline-block;
+    background-color: #f4a6c1;
+    color: white;
+    padding: 6px 14px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.skill {
+    max-width: 450px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.skill p {
+    font-weight: bold;
+    color: #d65a87;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #ffe0eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.html-progress {
+    width: 35%;
+    background-color: #e879a5;
+}
+
+.css-progress {
+    width: 15%;
+    background-color: #f4a6c1;
+}
+
+.js-progress {
+    width: 0%;
+    background-color: #d65a87;
+}
+#theme-toggle {
+    background-color: #d65a87;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#theme-toggle:hover {
+    background-color: #b83e6c;
+}
+body.dark-mode {
+    background-color: #211824;
+    color: #ffe4ef;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #39243a;
+}
+
+body.dark-mode section {
+    background-color: #332638;
+    color: #ffe4ef;
+}
+
+body.dark-mode section p {
+    color: #ffe4ef;
+}
+
+body.dark-mode nav {
+    background-color: #2b2030;
+}
+
+body.dark-mode nav a {
+    color: #ffb6d0;
+}
+
+body.dark-mode .project-card {
+    background-color: #493248;
+    border-color: #75445f;
+}
+
+body.dark-mode h2,
+body.dark-mode .project-card h3 {
+    color: #ffb6d0;
+}
+#theme-toggle {
+    background-color: #d65a87;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+```css
+#contact-form {
+    max-width: 450px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    border: 2px solid #f4a6c1;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #d65a87;
+    box-shadow: 0 0 8px #f4a6c1;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#form-status {
+    color: #d65a87;
+    font-weight: bold;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#journey">My Journey</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <header>
+        <h1>Welcome to My Little World! 🌸</h1>
+        <p>I'm Aiman Mehmood 🎀</p>
+        <p>Dreaming, Learning & Growing ✨</p>
+        
+<a href="#about" class="welcome-btn">Explore My World 💗</a>
+<button id="theme-toggle" onclick="toggleTheme()">
+    🌙 Dark Mode
+</button>
+
+    </header>
+
+    <section id="about">
+    <h2>🌷 About Me</h2>
+    <img src="aiman.png" alt="Aiman's Avatar" class="profile-pic">
+
+        <p>
+            Hello everyone! Welcome to my little corner
+            of the internet.
+        </p>
+
+        <p>
+            I am Aiman Mehmood, a Software Engineering student.
+            I am learning coding and building my first website!
+        </p>
+    </section>
+
+    <section id="hobbies">
+    <h2>💗 My Hobbies</h2>
+
+        <ul>
+            <li>Learning Coding 💻</li>
+            <li>Exploring Technology 🌐</li>
+            <li>Creative Projects 🎨</li>
+            <li>Learning New Things 🌸</li>
+        </ul>
+    </section>
+
+    <section id="journey">
+        <!DOCTYPE html>
+    <h2>✨ My Coding Journey</h2>
+
+        <p>
+            This is my very first website.
+            I am excited to learn HTML and CSS
+            and create beautiful things with code!
+        </p>
+
+        <button onclick="alert('Thank you for visiting my website! 💗')">
+            Click Me 💕
+        </button>
+    </section>
+
+<section id="projects">
+
+    <h2>🎨 My Projects</h2>
+
+    <p>Here are some of my creative coding projects!</p>
+
+    <div class="project-card">
+        <h3>🌸 My First Website</h3>
+
+        <p>
+            This is my first HTML and CSS project.
+            I created a personal website using beautiful
+            pink colours and an aesthetic design.
+        </p>
+
+        <span class="project-tag">HTML</span>
+        <span class="project-tag">CSS</span>
+    </div>
+
+    <div class="project-card">
+        <h3>🎀 My Next Project</h3>
+
+        <p>
+            Something exciting is coming soon!
+            I will add my next coding project here.
+        </p>
+
+        <span class="project-tag">Coming Soon</span>
+    </div>
+
+</section>
+
+
+<section id="skills">
+
+    <h2>💻 My Skills</h2>
+
+    <p>I am learning new skills every day! 🌸</p>
+
+    <div class="skill">
+        <p>🌷 HTML — Learning</p>
+        <div class="skill-bar">
+            <div class="skill-progress html-progress"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>🎀 CSS — Learning</p>
+        <div class="skill-bar">
+            <div class="skill-progress css-progress"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>✨ JavaScript — Coming Soon</p>
+        <div class="skill-bar">
+            <div class="skill-progress js-progress"></div>
+        </div>
+    </div>
+
+</section>
+```html
+<section id="contact">
+
+    <h2>💌 Contact Me</h2>
+
+    <p>Have a question or want to say hello? 🌸</p>
+
+    <form id="contact-form">
+
+        <input
+            type="text"
+            id="visitor-name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="visitor-email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            id="visitor-message"
+            placeholder="Write your message here..."
+            rows="5"
+            required
+        ></textarea>
+
+        <button type="submit" class="welcome-btn">
+            Send Message 💗
+        </button>
+
+        <p id="form-status" aria-live="polite"></p>
+
+    </form>
+
+</section>
+
+
+    <footer>
+        <p>Made with 💗 by Aiman Mehmood</p>
+    </footer>
+    <script>
+    function toggleTheme() {
+        document.body.classList.toggle("dark-mode");
+
+        const button = document.getElementById("theme-toggle");
+
+        if (document.body.classList.contains("dark-mode")) {
+            button.textContent = "☀️ Light Mode";
+        } else {
+            button.textContent = "🌙 Dark Mode";
+        }
+    }
+</script>
+
+</body>
+
+</html>
